@@ -22,7 +22,7 @@
         <li>
         <% if current_user %>
         <li> <%= link_to "Setting", edit_user_registration_path %> </li>
-        <li> <%= link_to "Sign-out", destroy_user_session_path, method: :destroy%> </li>
+        <li> <%= link_to "Sign-out", destroy_user_session_path, method: :DELETE %> </li>
                 <% else %>
               <li>  <%= link_to "log-in", new_user_session_path %></li>
                <li> <%= link_to "Sign-up", new_user_registration_path %></li>
